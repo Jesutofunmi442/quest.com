@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QUEST Login</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #2c3e50, #3498db);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .login-container {
+      animation: colorChange 10s infinite alternate;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      width: 320px;
+      text-align: center;
+      transition: background-color 2s ease-in-out;
+    }
+
+    @keyframes colorChange {
+      0%   { background-color: #ffffff; }
+      25%  { background-color: #f1c40f; }
+      50%  { background-color: #1abc9c; }
+      75%  { background-color: #e67e22; }
+      100% { background-color: #9b59b6; }
+    }
+
+    .login-container h1 {
+      margin-bottom: 1.5rem;
+      color: #2c3e50;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #3498db;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .login-container button:hover {
+      background-color: #2980b9;
+    }
+
+    .signup-text {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .signup-text a {
+      color: #2c3e50;
+      text-decoration: none;
+    }
+
+    .signup-text a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h1>QUEST</h1>
+    <form action="recipe.html">
+      <input type="text" placeholder="Username" required />
+      <input type="password" placeholder="Password" required />
+      <button onclick="recipe.html">Login</button>
+    </form>
+    <div class="signup-text">
+      Don't have an account? <a href="#">Sign up</a>
+    </div>
+  </div>
+
+</body>
+</html>
